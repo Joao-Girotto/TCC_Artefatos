@@ -1,0 +1,30 @@
+================================================================================
+         RELATÓRIO DE AUDITORIA E VALIDAÇÃO DE PRODUTO RASTER GEOTIFF
+================================================================================
+[*] Caminho do Raster:        /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif
+[*] Tamanho do Arquivo:       3.26 MB
+[*] Driver:                   GTiff
+[*] Número de Bandas:         1
+[*] Dimensões Matriciais:     4339 colunas x 4324 linhas
+[*] Total de Pixels:          18,761,836
+[*] Resolução de Grade:       dx=1000.00 m, dy=1000.00 m
+[*] Bounding Box Extents:     Left=2,781,000, Bottom=6,263,000, Right=7,120,000, Top=10,587,000
+[*] Sistema de Coordenadas:   EPSG:5880 (EPSG:5880)
+[*] Tipo de Dados da Banda:   float32
+[*] Valor NoData:             -9999.0
+[*] Metadados de Compressão:  DEFLATE
+[*] Esquema de Ladrilhamento: True (Blocos: (256, 256))
+
+[*] Análise de Conformidade Estatística:
+    - Células Válidas (Território/BHO): 8,651,251 (46.11%)
+    - Células NoData (Exterior/Oceano): 10,110,585 (53.89%)
+    - Área Válida Estimada:            8,651,251.00 km² (Área oficial Brasil ~8,515,767 km²)
+    - Valor Mínimo de Ave_CN:          6.00
+    - Valor Máximo de Ave_CN:          100.00
+    - Valor Médio de Ave_CN:           60.61
+    - Desvio Padrão de Ave_CN:         16.15
+    - Mediana de Ave_CN:               61.26
+
+================================================================================
+STATUS DA AUDITORIA: 100% CONFORME COM A ESPECIFICAÇÃO DO PRODUTO
+================================================================================

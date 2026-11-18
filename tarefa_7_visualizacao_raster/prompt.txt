@@ -1,0 +1,10 @@
+Tarefa 7: A partir de resultado_ia/resultado_ia_cn.tif, gere uma imagem PNG de visualização do raster de Curva Número do Brasil.
+
+Especificação do produto:
+- Mostrar os valores de CN em uma escala de cores contínua, dos menores valores (tons escuros) aos maiores (tons claros), com uma barra de cores (legenda) que identifique os valores.
+- As células com valor NoData (-9999) devem ficar transparentes, de modo que apenas o território coberto pelo raster apareça colorido.
+- Incluir um título e indicar na imagem o sistema de referência (EPSG:5880).
+- Manter a proporção geométrica do raster, sem esticar a imagem.
+- Resolução de 300 dpi.
+
+Salve em resultado_ia/resultado_ia_cn.png.

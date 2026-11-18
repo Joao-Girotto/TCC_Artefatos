@@ -1,0 +1,1 @@
+Tarefa 5: Verifique o CRS do shapefile da ANA. Se ele não estiver em SIRGAS 2000 (EPSG:4674), reprojete-o primeiro para esse sistema. Em seguida, reprojete-o para SIRGAS 2000 / Brazil Polyconic (EPSG:5880) e salve o resultado em dados_processados/ no formato GeoPackage, com o nome BHO_CN_5880.gpkg. Preserve todos os atributos e todas as feições.

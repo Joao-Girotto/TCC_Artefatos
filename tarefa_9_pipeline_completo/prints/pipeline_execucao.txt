@@ -1,0 +1,65 @@
+================================================================================
+        TAREFA 9: PIPELINE INTEGRADO DE GEOPROCESSAMENTO DE PONTA A PONTA
+================================================================================
+[*] Entrada Original (Shapefile): /home/girotto/Área de Trabalho/TCC_Artefatos/dados_originais/BHO_2014_CN.shp
+[*] Saída Vetorial (GeoPackage):  /home/girotto/Área de Trabalho/TCC_Artefatos/dados_processados/BHO_CN_5880.gpkg
+[*] Saída Raster (GeoTIFF):       /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif
+[*] Visualização Gráfica (PNG):   /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.png
+--------------------------------------------------------------------------------
+
+>>> ETAPA 1: REPROJEÇÃO CARTOGRÁFICA DO SHAPEFILE BHO 2014 CN
+    - Feições a processar: 1,305,955
+    - CRS Original:        None
+    - Campos de Atributo:  ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+    - [Vetor] Lote 01/14 | Feições:   100,000/1,305,955 (  7.7%) | Tempo:  5.46s | Taxa:  18323 feat/s
+    - [Vetor] Lote 02/14 | Feições:   200,000/1,305,955 ( 15.3%) | Tempo:  6.29s | Taxa:  17028 feat/s
+    - [Vetor] Lote 03/14 | Feições:   300,000/1,305,955 ( 23.0%) | Tempo:  5.93s | Taxa:  16971 feat/s
+    - [Vetor] Lote 04/14 | Feições:   400,000/1,305,955 ( 30.6%) | Tempo:  5.84s | Taxa:  17010 feat/s
+    - [Vetor] Lote 05/14 | Feições:   500,000/1,305,955 ( 38.3%) | Tempo:  6.20s | Taxa:  16828 feat/s
+    - [Vetor] Lote 06/14 | Feições:   600,000/1,305,955 ( 45.9%) | Tempo:  6.19s | Taxa:  16712 feat/s
+    - [Vetor] Lote 07/14 | Feições:   700,000/1,305,955 ( 53.6%) | Tempo:  7.91s | Taxa:  15978 feat/s
+    - [Vetor] Lote 08/14 | Feições:   800,000/1,305,955 ( 61.3%) | Tempo:  5.28s | Taxa:  16296 feat/s
+    - [Vetor] Lote 09/14 | Feições:   900,000/1,305,955 ( 68.9%) | Tempo:  7.23s | Taxa:  15979 feat/s
+    - [Vetor] Lote 10/14 | Feições: 1,000,000/1,305,955 ( 76.6%) | Tempo:  8.13s | Taxa:  15514 feat/s
+    - [Vetor] Lote 11/14 | Feições: 1,100,000/1,305,955 ( 84.2%) | Tempo:  7.68s | Taxa:  15247 feat/s
+    - [Vetor] Lote 12/14 | Feições: 1,200,000/1,305,955 ( 91.9%) | Tempo:  9.12s | Taxa:  14766 feat/s
+    - [Vetor] Lote 13/14 | Feições: 1,300,000/1,305,955 ( 99.5%) | Tempo:  8.51s | Taxa:  14481 feat/s
+    - [Vetor] Lote 14/14 | Feições: 1,305,955/1,305,955 (100.0%) | Tempo:  0.82s | Taxa:  14415 feat/s
+[✓] Etapa 1 Concluída em 90.60s! GPKG gerado com 1850.75 MB.
+
+>>> ETAPA 2: RASTERIZAÇÃO DE CURVE NUMBER (Ave_CN) EM 1000m x 1000m
+    - Grid Raster: 4339 colunas x 4324 linhas (18,761,836 pixels)
+    - Extensão: X=[2,781,000, 7,120,000], Y=[6,263,000, 10,587,000]
+    - Resolução: 1000m | NoData: -9999.0
+    - [Raster] Lote 01/14 | Feições:   100,000/1,305,955 (  7.7%) | Tempo:  8.31s | Taxa:  12035 feat/s
+    - [Raster] Lote 02/14 | Feições:   200,000/1,305,955 ( 15.3%) | Tempo:  8.67s | Taxa:  11781 feat/s
+    - [Raster] Lote 03/14 | Feições:   300,000/1,305,955 ( 23.0%) | Tempo:  8.09s | Taxa:  11969 feat/s
+    - [Raster] Lote 04/14 | Feições:   400,000/1,305,955 ( 30.6%) | Tempo:  7.66s | Taxa:  12222 feat/s
+    - [Raster] Lote 05/14 | Feições:   500,000/1,305,955 ( 38.3%) | Tempo:  8.13s | Taxa:  12236 feat/s
+    - [Raster] Lote 06/14 | Feições:   600,000/1,305,955 ( 45.9%) | Tempo:  8.01s | Taxa:  12278 feat/s
+    - [Raster] Lote 07/14 | Feições:   700,000/1,305,955 ( 53.6%) | Tempo:  9.27s | Taxa:  12040 feat/s
+    - [Raster] Lote 08/14 | Feições:   800,000/1,305,955 ( 61.3%) | Tempo:  6.37s | Taxa:  12401 feat/s
+    - [Raster] Lote 09/14 | Feições:   900,000/1,305,955 ( 68.9%) | Tempo:  8.11s | Taxa:  12393 feat/s
+    - [Raster] Lote 10/14 | Feições: 1,000,000/1,305,955 ( 76.6%) | Tempo:  8.99s | Taxa:  12253 feat/s
+    - [Raster] Lote 11/14 | Feições: 1,100,000/1,305,955 ( 84.2%) | Tempo:  9.00s | Taxa:  12141 feat/s
+    - [Raster] Lote 12/14 | Feições: 1,200,000/1,305,955 ( 91.9%) | Tempo:  9.97s | Taxa:  11931 feat/s
+    - [Raster] Lote 13/14 | Feições: 1,300,000/1,305,955 ( 99.5%) | Tempo:  9.67s | Taxa:  11792 feat/s
+    - [Raster] Lote 14/14 | Feições: 1,305,955/1,305,955 (100.0%) | Tempo:  1.34s | Taxa:  11704 feat/s
+[✓] Queima matricial concluída em 111.58s!
+[✓] Arquivo GeoTIFF gravado com sucesso em /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif (3.26 MB)
+
+>>> ETAPA 3: CÁLCULO E VALIDAÇÃO DOS INDICADORES ESTATÍSTICOS
+    [INDICADORES ESTATÍSTICOS DO CURVE NUMBER NO BRASIL]
+    1. Número de Pixels Válidos:      8,651,251
+    2. Área Coberta pelo Raster:       8,651,251.00 km²
+    3. Valor Mínimo de CN:             6.00
+    4. Valor Máximo de CN:             100.00
+    5. Média Populacional de CN:       60.61
+    6. Desvio-Padrão Populacional CN:  16.15
+
+>>> ETAPA 4: GERAÇÃO DA IMAGEM DE ALTA RESOLUÇÃO (PNG 300 DPI)
+[✓] Imagem PNG gravada com sucesso em /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.png (2.56 MB)
+
+================================================================================
+[SUCESSO TOTAL] Pipeline Completo Executado em 207.06 segundos!
+================================================================================

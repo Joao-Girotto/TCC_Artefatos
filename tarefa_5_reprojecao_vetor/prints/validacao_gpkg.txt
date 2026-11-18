@@ -1,0 +1,36 @@
+================================================================================
+        RELATÓRIO DE AUDITORIA E VALIDAÇÃO DE INTEGRIDADE ESPACIAL
+================================================================================
+[1] Informações do Arquivo Gerado:
+    - Caminho: /home/girotto/Área de Trabalho/TCC_Artefatos/dados_processados/BHO_CN_5880.gpkg
+    - Tamanho: 1850.85 MB
+    - Camadas disponíveis: [['BHO_CN_5880' 'MultiPolygon']]
+
+[2] Comparativo de Metadados:
+    - Feições Originais (Shapefile): 1,305,955
+    - Feições Finais (GeoPackage):   1,305,955
+    - Diferença de Feições:          0
+    - CRS Original:                  GEOGCS["SAD69",DATUM["South_American_Datum_1969",SPHEROID["GRS 1967",6378160,298.247167427,AUTHORITY["EPSG","7036"]],AUTHORITY["EPSG","6618"]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433],AXIS["Longitude",EAST],AXIS["Latitude",NORTH]]
+    - CRS Final:                     EPSG:5880
+    - Tipo Geométrico Original:      Polygon
+    - Tipo Geométrico Final:         MultiPolygon
+
+[3] Comparativo de Atributos:
+    - Campos Shapefile:  ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+    - Campos GeoPackage: ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+    - Esquema Idêntico:  True
+
+[4] Inspeção de Amostras de Extremidade (Head e Tail):
+--- Primeiras 3 Feições (Head) ---
+ID 0: COCURSODAG=86414218, COBACIA=8641421877, Geom=MultiPolygon, Centroid=(5216011.096487775, 7453444.45238524)
+ID 1: COCURSODAG=864156, COBACIA=864156937, Geom=MultiPolygon, Centroid=(5250011.716783179, 7453369.724720789)
+ID 2: COCURSODAG=864142, COBACIA=864142333, Geom=MultiPolygon, Centroid=(5222875.483259364, 7455405.863140097)
+
+--- Últimas 3 Feições (Tail) ---
+ID 1305952: COCURSODAG=868576538, COBACIA=868576538, Geom=MultiPolygon, Centroid=(5698954.5024495125, 7731894.918226713)
+ID 1305953: COCURSODAG=86442559822, COBACIA=864425598223, Geom=MultiPolygon, Centroid=(5358664.952685555, 7369856.681666402)
+ID 1305954: COCURSODAG=78187266, COBACIA=78187266, Geom=MultiPolygon, Centroid=(6350685.095797396, 7729164.477950995)
+
+================================================================================
+STATUS DA AUDITORIA: APROVADO COM 100% DE CONFORMIDADE
+================================================================================

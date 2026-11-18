@@ -1,0 +1,64 @@
+================================================================================
+        TAREFA 5: REPROJEÇÃO CARTOGRÁFICA EM CASCATA E EXPORTAÇÃO GPKG
+================================================================================
+[*] Arquivo de Entrada: /home/girotto/Área de Trabalho/TCC_Artefatos/dados_originais/BHO_2014_CN.shp
+[*] Arquivo de Saída:   /home/girotto/Área de Trabalho/TCC_Artefatos/dados_processados/BHO_CN_5880.gpkg
+[*] Camada GeoPackage:  BHO_CN_5880
+--------------------------------------------------------------------------------
+
+[*] Passo 1: Inspecionando metadados e CRS original...
+    - Total de Feições:   1,305,955
+    - Tipo de Geometria:  Polygon
+    - Campos/Atributos:   ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+    - CRS Detectado:      GEOGCS["SAD69",DATUM["South_American_Datum_1969",SPHEROID["GRS 1967",6378160,298.247167427,AUTHORITY["EPSG","7036"]],AUTHORITY["EPSG","6618"]],PRIMEM["Greenwich",0],UNIT["Degree",0.0174532925199433],AXIS["Longitude",EAST],AXIS["Latitude",NORTH]]
+
+[!] O arquivo NÃO está em SIRGAS 2000 (identificado como SAD 69).
+[*] Estratégia de Reprojeção em Cascata:
+    1º Estágio: Reprojeção SAD 69 -> SIRGAS 2000 (EPSG:4674)
+    2º Estágio: Reprojeção SIRGAS 2000 -> SIRGAS 2000 / Brazil Polyconic (EPSG:5880)
+
+[*] Passo 2: Processando 1,305,955 feições em 14 lotes de até 100,000...
+    - Lote 01/14 | Feições:   100,000/1,305,955 (  7.7%) | Tempo lote:  8.75s | Taxa:  11427 feat/s | ETA: 105.5s
+    - Lote 02/14 | Feições:   200,000/1,305,955 ( 15.3%) | Tempo lote:  7.28s | Taxa:  12472 feat/s | ETA:  88.7s
+    - Lote 03/14 | Feições:   300,000/1,305,955 ( 23.0%) | Tempo lote:  6.65s | Taxa:  13223 feat/s | ETA:  76.1s
+    - Lote 04/14 | Feições:   400,000/1,305,955 ( 30.6%) | Tempo lote:  6.30s | Taxa:  13798 feat/s | ETA:  65.7s
+    - Lote 05/14 | Feições:   500,000/1,305,955 ( 38.3%) | Tempo lote:  7.02s | Taxa:  13886 feat/s | ETA:  58.0s
+    - Lote 06/14 | Feições:   600,000/1,305,955 ( 45.9%) | Tempo lote:  6.81s | Taxa:  14012 feat/s | ETA:  50.4s
+    - Lote 07/14 | Feições:   700,000/1,305,955 ( 53.6%) | Tempo lote:  9.02s | Taxa:  13503 feat/s | ETA:  44.9s
+    - Lote 08/14 | Feições:   800,000/1,305,955 ( 61.3%) | Tempo lote:  5.64s | Taxa:  13918 feat/s | ETA:  36.4s
+    - Lote 09/14 | Feições:   900,000/1,305,955 ( 68.9%) | Tempo lote:  7.85s | Taxa:  13776 feat/s | ETA:  29.5s
+    - Lote 10/14 | Feições: 1,000,000/1,305,955 ( 76.6%) | Tempo lote:  8.83s | Taxa:  13484 feat/s | ETA:  22.7s
+    - Lote 11/14 | Feições: 1,100,000/1,305,955 ( 84.2%) | Tempo lote:  8.64s | Taxa:  13284 feat/s | ETA:  15.5s
+    - Lote 12/14 | Feições: 1,200,000/1,305,955 ( 91.9%) | Tempo lote: 11.15s | Taxa:  12773 feat/s | ETA:   8.3s
+    - Lote 13/14 | Feições: 1,300,000/1,305,955 ( 99.5%) | Tempo lote: 10.13s | Taxa:  12490 feat/s | ETA:   0.5s
+    - Lote 14/14 | Feições: 1,305,955/1,305,955 (100.0%) | Tempo lote:  0.94s | Taxa:  12434 feat/s | ETA:   0.0s
+
+[Sucesso] Processamento e escrita concluídos em 105.03 segundos!
+
+================================================================================
+                    VALIDAÇÃO DE INTEGRIDADE DO GEOPACKAGE
+================================================================================
+[*] Tamanho do Arquivo GPKG: 1850.85 MB
+[*] Feições no GeoPackage:   1,305,955
+[*] CRS Registrado:          EPSG:5880
+[*] Tipo de Geometria:       MultiPolygon
+[*] Campos no GeoPackage:    ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+[✓] Validação 1: Contagem de feições idêntica (100% preservadas).
+[✓] Validação 2: Todos os 8 atributos e tipos rigorosamente preservados.
+[✓] Validação 3: CRS verificado e validado como EPSG:5880 (SIRGAS 2000 / Brazil Polyconic).
+
+[*] Amostra das 5 primeiras feições em EPSG:5880:
+  COCURSODAG  ...                                           geometry
+0   86414218  ...  MULTIPOLYGON (((5217063.094 7453360.181, 52170...
+1     864156  ...  MULTIPOLYGON (((5250529.334 7453375.053, 52504...
+2     864142  ...  MULTIPOLYGON (((5223216.559 7455582.41, 522323...
+3  864162848  ...  MULTIPOLYGON (((5262541.04 7454741.206, 526243...
+4     722896  ...  MULTIPOLYGON (((5814371.823 9424222.399, 58143...
+
+[5 rows x 4 columns]
+
+[*] Bounding Box da Amostra (em metros): [5214857.64367488 7452863.08518323 5814828.38773863 9424324.41341656]
+
+================================================================================
+[CONCLUÍDO COM SUCESSO] Tempo Total de Execução: 105.11 segundos
+================================================================================

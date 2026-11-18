@@ -1,0 +1,25 @@
+================================================================================
+        RELATÓRIO DE AUDITORIA E VALIDAÇÃO DE PRODUTO VISUAL PNG
+================================================================================
+[*] Arquivo Analisado:      /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.png
+[*] Tamanho em Disco:       2.56 MB
+[*] Formato de Imagem:      PNG
+[*] Dimensões em Pixels:    3026 x 2730 (Largura x Altura)
+[*] Modo de Cor:            RGBA (RGBA - Red, Green, Blue, Alpha)
+[*] Resolução Gravada (DPI): (299.9994, 299.9994)
+
+[*] Análise de Transparência do Canal Alpha:
+    - Total de Pixels:       8,260,980
+    - Pixels Transparentes:  5,414,838 (65.55%) -> Fundo e NoData
+    - Pixels Translúcidos:   83,830 (1.01%) -> Suavização de bordas / Anti-aliasing
+    - Pixels Opacos:         2,762,312 (33.44%) -> Território Brasileiro e Elementos
+
+[*] Inspeção de Cantos da Imagem (Valores RGBA):
+    - Canto Superior Esquerdo (0,0):       [255 255 255   0]
+    - Canto Superior Direito (0, -1):      [255 255 255   0]
+    - Canto Inferior Esquerdo (-1, 0):     [255 255 255   0]
+    - Canto Inferior Direito (-1, -1):     [255 255 255   0]
+
+================================================================================
+STATUS DA AUDITORIA: 100% CONFORME COM A ESPECIFICAÇÃO DO PRODUTO
+================================================================================

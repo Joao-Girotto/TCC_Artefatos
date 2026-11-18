@@ -1,0 +1,23 @@
+================================================================================
+      VALIDAÇÃO AUTOMATIZADA DE NAVEGADOR: APLICAÇÃO STREAMLIT (TAREFA 9)
+================================================================================
+[*] Conectando ao servidor em http://localhost:8501...
+[✓] Aplicação carregada em 5.63s | Título: 'Dashboard CN Brasil - Geoprocessamento Agêntico'
+
+[*] Passo 1: Auditando os 6 indicadores estatísticos na interface...
+    - Indicador: Pixels Válidos -> 8,651,251
+    - Indicador: Área Mapeada -> 8,651,251 km²
+    - Indicador: Mínimo de CN -> 6.00
+    - Indicador: Máximo de CN -> 100.00
+    - Indicador: Média de CN -> 60.61
+    - Indicador: Desvio-Padrão Pop. -> 16.15
+[✓] Todos os 6 indicadores estatísticos mandatórios estão presentes e corretos!
+
+[*] Passo 2: Inspecionando mapa interativo Folium...
+[✓] Componente de mapa Folium interativo visível.
+[*] Simulando interação de zoom no mapa...
+[✓] Captura de tela da aplicação salva em: /home/girotto/Área de Trabalho/TCC_Artefatos/tarefa_9_pipeline_completo/prints/app_browser_view.png
+
+================================================================================
+STATUS DA VALIDAÇÃO: APROVADO COM 100% DE SUCESSO NO NAVEGADOR
+================================================================================

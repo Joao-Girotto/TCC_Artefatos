@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek To-Do List | Antigravity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="circle circle-1"></div>
+        <div class="circle circle-2"></div>
+    </div>
+    
+    <div class="todo-container">
+        <header>
+            <h1>Minhas Tarefas</h1>
+            <p class="subtitle">Estudo de Caso - Google Antigravity</p>
+        </header>
+        
+        <div class="input-section">
+            <input type="text" id="task-input" placeholder="Digite uma nova tarefa..." autocomplete="off">
+            <button id="add-btn">
+                <span>Adicionar</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+            </button>
+        </div>
+        
+        <div class="filter-stats-section">
+            <div class="filters">
+                <button id="filter-all" class="filter-btn active">Todas</button>
+                <button id="filter-active" class="filter-btn">Ativas</button>
+                <button id="filter-completed" class="filter-btn">Concluídas</button>
+            </div>
+            <div class="stats">
+                <span id="task-counter">0 pendentes</span>
+            </div>
+        </div>
+        
+        <ul id="task-list" class="task-list">
+            <!-- As tarefas serão inseridas aqui dinamicamente -->
+        </ul>
+        
+        <div class="clear-section" style="display: none;">
+            <button id="clear-completed-btn">Limpar Concluídas</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

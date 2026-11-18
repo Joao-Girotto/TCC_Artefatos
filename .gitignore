@@ -1,0 +1,22 @@
+# Ambientes Virtuais e Caches Python
+.venv/
+venv/
+ENV/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Bases de Dados Pesadas (> 100 MB - Excedem limites do GitHub)
+# O shapefile original descompactado (1.5 GB), o zip (1.1 GB) e o GeoPackage processado (1.9 GB)
+BHO_CN.zip
+dados_originais/*
+!dados_originais/.gitkeep
+dados_processados/*
+!dados_processados/.gitkeep
+
+# Arquivos de sistema e temporários
+.DS_Store
+Thumbs.db
+*.tmp

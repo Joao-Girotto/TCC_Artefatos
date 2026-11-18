@@ -1,0 +1,17 @@
+# Dependências da Aplicação Streamlit
+streamlit==1.65.0
+folium==0.20.0
+streamlit-folium==0.26.2
+plotly==7.1.0
+rasterio==1.4.4
+pyogrio==0.13.0
+geopandas==1.1.4
+pandas==2.3.3
+numpy==2.2.6
+matplotlib==3.10.9
+pillow==12.3.0
+pyproj==3.7.1
+shapely==2.1.2
+branca==0.8.2
+pydeck==0.9.3
+altair==6.2.2

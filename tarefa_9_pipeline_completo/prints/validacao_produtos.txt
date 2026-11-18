@@ -1,0 +1,31 @@
+================================================================================
+         RELATÓRIO DE AUDITORIA E VALIDAÇÃO DOS PRODUTOS DA TAREFA 9
+================================================================================
+[PRODUTO 1] GeoPackage Reprojetado:
+    - Caminho:          /home/girotto/Área de Trabalho/TCC_Artefatos/dados_processados/BHO_CN_5880.gpkg
+    - Tamanho em Disco: 1850.75 MB
+    - Feições Totais:   1,305,955 (100% preservadas)
+    - Sistema CRS:      EPSG:5880
+    - Geometria:        MultiPolygon
+    - Campos Atributo:  ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+
+[PRODUTO 2] Raster GeoTIFF Nacional:
+    - Caminho:          /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif
+    - Tamanho em Disco: 3.26 MB
+    - Dimensões:        4339 colunas x 4324 linhas
+    - Sistema CRS:      EPSG:5880
+    - Resolução:        dx=1000m, dy=1000m
+    - Bounds:           Left=2,781,000, Bottom=6,263,000, Right=7,120,000, Top=10,587,000
+    - NoData:           -9999.0
+
+[PRODUTO 3] Indicadores Estatísticos Oficiais do Raster:
+    1. Pixels Válidos:            8,651,251
+    2. Área Mapeada:              8,651,251.00 km²
+    3. Valor Mínimo de CN:        6.00
+    4. Valor Máximo de CN:        100.00
+    5. Média de CN:               60.61
+    6. Desvio-Padrão Pop. (ddof=0): 16.15
+
+================================================================================
+STATUS DA AUDITORIA: 100% CONFORME COM A ESPECIFICAÇÃO DA TAREFA 9
+================================================================================

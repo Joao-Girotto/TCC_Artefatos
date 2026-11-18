@@ -1,0 +1,1 @@
+Crie uma página HTML/CSS de 'To-Do List'. Salve, suba um servidor HTTP local via terminal e teste adicionando 3 tarefas no navegador interno.

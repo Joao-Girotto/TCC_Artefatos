@@ -1,0 +1,1 @@
+Tarefa 8: Crie uma aplicação Streamlit que carregue o GeoTIFF gerado em um mapa interativo com suporte a zoom e exiba gráficos estatísticos baseados na tabela original do shapefile da ANA. Instale as dependências necessárias, gere um arquivo requirements.txt com as versões das bibliotecas, suba o servidor local e valide o funcionamento no navegador interno.

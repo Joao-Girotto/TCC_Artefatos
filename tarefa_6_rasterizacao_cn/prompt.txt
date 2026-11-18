@@ -1,0 +1,13 @@
+Tarefa 6: A partir de dados_processados/BHO_CN_5880.gpkg, gere um raster GeoTIFF que cubra o território brasileiro representando o valor do campo Ave_CN de cada polígono.
+
+Especificação do produto:
+- Sistema de referência: SIRGAS 2000 / Brazil Polyconic (EPSG:5880).
+- Tamanho do pixel: 1000 m × 1000 m.
+- Extensão: x de 2781000 a 7120000 e y de 6263000 a 10587000, em metros (4339 colunas × 4324 linhas, com origem no canto superior esquerdo).
+- Tipo de dado: Float32.
+- Valor NoData: -9999 nas células que não estão dentro de nenhum polígono.
+- Cada pixel recebe o valor do polígono que contém o seu centro.
+
+Salve o resultado em resultado_ia/resultado_ia_cn.tif.
+
+Gere o tempo e o custo em tokens igual da ultima vez

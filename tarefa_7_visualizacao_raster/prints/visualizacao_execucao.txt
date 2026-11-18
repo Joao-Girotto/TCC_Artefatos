@@ -1,0 +1,36 @@
+================================================================================
+      TAREFA 7: RENDERIZAÇÃO CARTOGRÁFICA DO RASTER CN PARA PNG (300 DPI)
+================================================================================
+[*] Raster de Entrada: /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif
+[*] Imagem de Saída:   /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.png
+--------------------------------------------------------------------------------
+
+[*] Passo 1: Lendo o raster GeoTIFF...
+    - Dimensões do Raster: 4339 colunas x 4324 linhas
+    - Bounding Box:        X=[2,781,000, 7,120,000], Y=[6,263,000, 10,587,000]
+    - Sistema de Coordenadas: EPSG:5880
+    - Valor NoData:        -9999.0
+
+[*] Passo 2: Mascarando células NoData e configurando escala contínua...
+    - Células válidas no território: 8,651,251
+    - Faixa de valores válidos:      CN Mín=6.0, CN Máx=100.0
+
+[*] Passo 3: Compondo a prancha cartográfica em alta resolução (300 DPI)...
+
+[*] Passo 4: Renderizando e gravando imagem em /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.png...
+[Sucesso] Renderização concluída em 3.80 segundos!
+
+================================================================================
+                    VALIDAÇÃO DE INTEGRIDADE DA IMAGEM
+================================================================================
+[*] Tamanho do Arquivo PNG: 2.56 MB
+[*] Resolução da Imagem:    3026 x 2730 pixels
+[*] Modo de Cor:            RGBA (Canais RGBA com suporte a transparência)
+[*] DPI nos Metadados:      (299.9994, 299.9994)
+[*] Pixels Transparentes:   5,414,838 (65.55% da tela)
+[*] Pixels Coloridos:       2,846,142 (34.45% da tela)
+[✓] Todas as verificações técnicas foram APROVADAS com sucesso.
+
+================================================================================
+[CONCLUÍDO COM SUCESSO] Tempo Total de Execução: 4.42 segundos
+================================================================================

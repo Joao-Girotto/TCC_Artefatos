@@ -1,0 +1,6 @@
+Tarefa 9: Execute novamente, do início ao fim, o pipeline completo deste projeto a partir do Shapefile BHO_2014_CN disponível em dados_originais/: reprojeção para SIRGAS 2000 / Brazil Polyconic (EPSG:5880), rasterização do campo Ave_CN e aplicação Streamlit. Essencialmente da tarefa 5 até a 8
+
+Especificação dos produtos:
+- GeoPackage reprojetado em dados_processados/BHO_CN_5880.gpkg;
+- raster GeoTIFF em resultado_ia/resultado_ia_cn.tif, em EPSG:5880, pixel de 1000 m × 1000 m, extensão x de 2781000 a 7120000 e y de 6263000 a 10587000, tipo Float32, NoData -9999, cada pixel com o valor do polígono que contém o seu centro;
+- aplicação Streamlit em aplicacao/, com mapa interativo e indicadores estatísticos (número de pixels válidos, área em km², mínimo, máximo, média e desvio-padrão populacional do CN), funcionando no navegador.

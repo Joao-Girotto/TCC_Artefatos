@@ -1,0 +1,67 @@
+================================================================================
+    TAREFA 6: RASTERIZAÇÃO ESPACIAL DE CURVE NUMBER (CN) PARA GEOTIFF
+================================================================================
+[*] Vetor de Entrada:        /home/girotto/Área de Trabalho/TCC_Artefatos/dados_processados/BHO_CN_5880.gpkg (layer: BHO_CN_5880)
+[*] Raster de Saída:         /home/girotto/Área de Trabalho/TCC_Artefatos/resultado_ia/resultado_ia_cn.tif
+[*] Sistema de Referência:   EPSG:5880 (SIRGAS 2000 / Brazil Polyconic)
+[*] Resolução Espacial:      1000 m x 1000 m
+[*] Extensão X:              2,781,000 a 7,120,000 m (Largura: 4,339,000 m)
+[*] Extensão Y:              6,263,000 a 10,587,000 m (Altura:  4,324,000 m)
+[*] Dimensões da Matriz:     4339 colunas x 4324 linhas (18,761,836 pixels)
+[*] Tipo de Dado:            Float32 (NoData: -9999.0)
+[*] Critério de Amostragem:  Centro do Pixel (all_touched=False)
+--------------------------------------------------------------------------------
+
+[*] Passo 1: Lendo metadados da camada vetorial...
+    - Total de Feições Vetoriais: 1,305,955
+    - CRS da Camada:              EPSG:5880
+    - Campos disponíveis:         ['COCURSODAG', 'COBACIA', 'Count', 'Min_CN', 'Max_CN', 'Ave_CN', 'StdDv_CN', 'Var_CN']
+
+[*] Passo 2: Alocando matriz matricial na memória RAM...
+    - Matriz alocada com sucesso em 0.015s (Consumo de RAM: 71.57 MB).
+
+[*] Passo 3: Queimando feições na matriz em 14 lotes de até 100,000...
+    - Lote 01/14 | Feições:   100,000/1,305,955 (  7.7%) | Tempo Lote:  8.19s | Taxa:  12209 feat/s | ETA:  98.8s
+    - Lote 02/14 | Feições:   200,000/1,305,955 ( 15.3%) | Tempo Lote:  8.42s | Taxa:  12040 feat/s | ETA:  91.9s
+    - Lote 03/14 | Feições:   300,000/1,305,955 ( 23.0%) | Tempo Lote:  7.80s | Taxa:  12288 feat/s | ETA:  81.9s
+    - Lote 04/14 | Feições:   400,000/1,305,955 ( 30.6%) | Tempo Lote:  7.41s | Taxa:  12569 feat/s | ETA:  72.1s
+    - Lote 05/14 | Feições:   500,000/1,305,955 ( 38.3%) | Tempo Lote:  7.97s | Taxa:  12565 feat/s | ETA:  64.1s
+    - Lote 06/14 | Feições:   600,000/1,305,955 ( 45.9%) | Tempo Lote:  7.82s | Taxa:  12603 feat/s | ETA:  56.0s
+    - Lote 07/14 | Feições:   700,000/1,305,955 ( 53.6%) | Tempo Lote:  9.23s | Taxa:  12316 feat/s | ETA:  49.2s
+    - Lote 08/14 | Feições:   800,000/1,305,955 ( 61.3%) | Tempo Lote:  6.40s | Taxa:  12650 feat/s | ETA:  40.0s
+    - Lote 09/14 | Feições:   900,000/1,305,955 ( 68.9%) | Tempo Lote:  7.99s | Taxa:  12635 feat/s | ETA:  32.1s
+    - Lote 10/14 | Feições: 1,000,000/1,305,955 ( 76.6%) | Tempo Lote:  8.95s | Taxa:  12471 feat/s | ETA:  24.5s
+    - Lote 11/14 | Feições: 1,100,000/1,305,955 ( 84.2%) | Tempo Lote:  8.86s | Taxa:  12354 feat/s | ETA:  16.7s
+    - Lote 12/14 | Feições: 1,200,000/1,305,955 ( 91.9%) | Tempo Lote: 10.10s | Taxa:  12104 feat/s | ETA:   8.8s
+    - Lote 13/14 | Feições: 1,300,000/1,305,955 ( 99.5%) | Tempo Lote:  9.50s | Taxa:  11966 feat/s | ETA:   0.5s
+    - Lote 14/14 | Feições: 1,305,955/1,305,955 (100.0%) | Tempo Lote:  1.23s | Taxa:  11886 feat/s | ETA:   0.0s
+
+[Sucesso] Rasterização concluída em 109.87 segundos!
+
+[*] Passo 4: Gravando matriz raster no formato GeoTIFF...
+[Sucesso] Arquivo gravado em 0.33s | Tamanho em disco: 3.26 MB
+
+================================================================================
+                    VALIDAÇÃO DE INTEGRIDADE DO GEOTIFF
+================================================================================
+[*] Driver do Raster:       GTiff
+[*] Dimensões:              4339 colunas x 4324 linhas
+[*] CRS Registrado:         EPSG:5880
+[*] Limites (Bounds):       BoundingBox(left=2781000.0, bottom=6263000.0, right=7120000.0, top=10587000.0)
+[*] Resolução (Pixel):      dx=1000.0 m, dy=1000.0 m
+[*] Tipo de Dados:          float32
+[*] Valor NoData:           -9999.0
+[✓] Validações Estruturais (Dimensões, CRS, Bounds, NoData): 100% CONFORME
+
+[*] Estatísticas da Matriz Raster:
+    - Total de Células:      18,761,836
+    - Células Válidas (CN):  8,651,251 (46.11% do grid)
+    - Células NoData:        10,110,585 (53.89% do grid)
+    - Valor Mínimo de CN:    6.00
+    - Valor Máximo de CN:    100.00
+    - Média de CN no Brasil: 60.61
+    - Desvio Padrão de CN:   16.15
+
+================================================================================
+[CONCLUÍDO COM SUCESSO] Tempo Total de Execução: 110.33 segundos
+================================================================================
